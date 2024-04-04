@@ -48,14 +48,14 @@ def load_selected_model(selected_model):
     label_encoder_path = ""
     
     if selected_model == "Character Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Character_model_gray_v2.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Character_label_encoder_gray_v2.joblib"
+        model_path = "Character_model_gray_v2.h5"
+        label_encoder_path = "Character_label_encoder_gray_v2.joblib"
     elif selected_model == "Consonant Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Consonant_model_gray_v2.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Consonant_label_encoder_gray_v2.joblib"
+        model_path = "Consonant_model_gray_v2.h5"
+        label_encoder_path = "Consonant_label_encoder_gray_v2.joblib"
     elif selected_model == "Vowel Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Vowel_model_gray_v2.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/v2_models/Vowel_label_encoder_gray_v2.joblib"
+        model_path = "Vowel_model_gray_v2.h5"
+        label_encoder_path = "Vowel_label_encoder_gray_v2.joblib"
 
     model = load_model(model_path)
     label_dencoder = joblib.load(label_encoder_path)
