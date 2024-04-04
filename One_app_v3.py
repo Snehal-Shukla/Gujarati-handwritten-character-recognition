@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image,ImageFilter
 from keras.models import load_model
 import joblib
-# import cv2
+import cv2
 import pandas as pd
 
 gujarati_consonants_dict = {
